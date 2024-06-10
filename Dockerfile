@@ -21,7 +21,7 @@ RUN set -x && apt update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
 
 COPY --from=builder /app/server /app/server
 
-EXPOSE 8080
+EXPOSE 80
 
 CMD ["/app/server"]
 
